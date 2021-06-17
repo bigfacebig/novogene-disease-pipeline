@@ -12,17 +12,20 @@ title: Home
 java -jar cromwell-<version>.jar run \
     -i inputs.json \
     -o options.json \
+    -l labels.json \
     --imports /path/to/main.zip \
     path/to/mail.wdl
 ```
 
 - `inputs.json` could be generated with `womtool`
+
 ```bash
 java -jar womtool-<version>.jar inputs path/to/main.wdl > inputs.json
 ```
 > [inputs details](./inputs.html)
 
 - `options.json` example:
+
 ```json
 {
     "final_workflow_outputs_dir": "proj_test",
@@ -31,7 +34,6 @@ java -jar womtool-<version>.jar inputs path/to/main.wdl > inputs.json
     "write_to_cache": true,
     "read_from_cache": true
 }
-
 ```
 
 ### 2. submit with cromwell
