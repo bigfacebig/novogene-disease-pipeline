@@ -1,0 +1,228 @@
+<html>
+<head>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.11.3/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+
+        var metadataJson = {"end":"2021-06-17T16:32:27.170Z","start":"2021-06-17T16:28:07.305Z","calls":{"disease.DepthStat":[{"executionStatus":"Done","shardIndex":0,"end":"2021-06-17T16:29:13.918Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:29:06.981Z","description":"CallCacheReading","endTime":"2021-06-17T16:29:09.942Z"},{"startTime":"2021-06-17T16:29:06.945Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:29:06.945Z"},{"startTime":"2021-06-17T16:29:06.585Z","description":"RequestingExecutionToken","endTime":"2021-06-17T16:29:06.945Z"},{"startTime":"2021-06-17T16:29:12.915Z","description":"UpdatingJobStore","endTime":"2021-06-17T16:29:13.918Z"},{"startTime":"2021-06-17T16:29:06.585Z","description":"Pending","endTime":"2021-06-17T16:29:06.585Z"},{"startTime":"2021-06-17T16:29:06.945Z","description":"PreparingJob","endTime":"2021-06-17T16:29:06.981Z"},{"startTime":"2021-06-17T16:29:09.942Z","description":"UpdatingCallCache","endTime":"2021-06-17T16:29:12.915Z"}],"start":"2021-06-17T16:29:06.585Z"},{"executionStatus":"Done","shardIndex":1,"end":"2021-06-17T16:29:28.913Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:29:21.886Z","description":"Pending","endTime":"2021-06-17T16:29:21.886Z"},{"startTime":"2021-06-17T16:29:21.945Z","description":"PreparingJob","endTime":"2021-06-17T16:29:21.987Z"},{"startTime":"2021-06-17T16:29:21.987Z","description":"CallCacheReading","endTime":"2021-06-17T16:29:25.995Z"},{"startTime":"2021-06-17T16:29:21.886Z","description":"RequestingExecutionToken","endTime":"2021-06-17T16:29:21.944Z"},{"startTime":"2021-06-17T16:29:21.944Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:29:21.945Z"},{"startTime":"2021-06-17T16:29:27.916Z","description":"UpdatingJobStore","endTime":"2021-06-17T16:29:28.913Z"},{"startTime":"2021-06-17T16:29:25.995Z","description":"UpdatingCallCache","endTime":"2021-06-17T16:29:27.916Z"}],"start":"2021-06-17T16:29:21.886Z"},{"executionStatus":"Done","shardIndex":2,"end":"2021-06-17T16:29:16.908Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:29:09.981Z","description":"CallCacheReading","endTime":"2021-06-17T16:29:13.039Z"},{"startTime":"2021-06-17T16:29:15.918Z","description":"UpdatingJobStore","endTime":"2021-06-17T16:29:16.907Z"},{"startTime":"2021-06-17T16:29:09.944Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:29:09.944Z"},{"startTime":"2021-06-17T16:29:09.645Z","description":"Pending","endTime":"2021-06-17T16:29:09.645Z"},{"startTime":"2021-06-17T16:29:09.645Z","description":"RequestingExecutionToken","endTime":"2021-06-17T16:29:09.944Z"},{"startTime":"2021-06-17T16:29:13.039Z","description":"UpdatingCallCache","endTime":"2021-06-17T16:29:15.918Z"},{"startTime":"2021-06-17T16:29:09.944Z","description":"PreparingJob","endTime":"2021-06-17T16:29:09.981Z"}],"start":"2021-06-17T16:29:09.645Z"}],"disease.parse_sample_list":[{"executionStatus":"Done","shardIndex":-1,"end":"2021-06-17T16:28:13.915Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:28:10.477Z","description":"UpdatingCallCache","endTime":"2021-06-17T16:28:12.927Z"},{"startTime":"2021-06-17T16:28:12.927Z","description":"UpdatingJobStore","endTime":"2021-06-17T16:28:13.915Z"},{"startTime":"2021-06-17T16:28:09.944Z","description":"PreparingJob","endTime":"2021-06-17T16:28:09.973Z"},{"startTime":"2021-06-17T16:28:09.944Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:28:09.944Z"},{"startTime":"2021-06-17T16:28:09.464Z","description":"Pending","endTime":"2021-06-17T16:28:09.464Z"},{"startTime":"2021-06-17T16:28:09.973Z","description":"CallCacheReading","endTime":"2021-06-17T16:28:10.477Z"},{"startTime":"2021-06-17T16:28:09.464Z","description":"RequestingExecutionToken","endTime":"2021-06-17T16:28:09.944Z"}],"start":"2021-06-17T16:28:09.464Z"}],"disease.excel2info":[{"executionStatus":"Done","shardIndex":-1,"end":"2021-06-17T16:28:13.915Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:28:09.944Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:28:09.944Z"},{"startTime":"2021-06-17T16:28:12.927Z","description":"UpdatingJobStore","endTime":"2021-06-17T16:28:13.915Z"},{"startTime":"2021-06-17T16:28:09.993Z","description":"CallCacheReading","endTime":"2021-06-17T16:28:10.495Z"},{"startTime":"2021-06-17T16:28:10.495Z","description":"UpdatingCallCache","endTime":"2021-06-17T16:28:12.927Z"},{"startTime":"2021-06-17T16:28:09.464Z","description":"RequestingExecutionToken","endTime":"2021-06-17T16:28:09.944Z"},{"startTime":"2021-06-17T16:28:09.464Z","description":"Pending","endTime":"2021-06-17T16:28:09.464Z"},{"startTime":"2021-06-17T16:28:09.944Z","description":"PreparingJob","endTime":"2021-06-17T16:28:09.993Z"}],"start":"2021-06-17T16:28:09.464Z"}],"disease.CombineStat":[{"executionStatus":"Done","shardIndex":0,"end":"2021-06-17T16:29:43.907Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:29:39.973Z","description":"CallCacheReading","endTime":"2021-06-17T16:29:40.189Z"},{"startTime":"2021-06-17T16:29:39.944Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:29:39.945Z"},{"startTime":"2021-06-17T16:29:39.225Z","description":"Pending","endTime":"2021-06-17T16:29:39.226Z"},{"startTime":"2021-06-17T16:29:42.914Z","description":"UpdatingJobStore","endTime":"2021-06-17T16:29:43.907Z"},{"startTime":"2021-06-17T16:29:40.189Z","description":"UpdatingCallCache","endTime":"2021-06-17T16:29:42.914Z"},{"startTime":"2021-06-17T16:29:39.226Z","description":"RequestingExecutionToken","endTime":"2021-06-17T16:29:39.944Z"},{"startTime":"2021-06-17T16:29:39.945Z","description":"PreparingJob","endTime":"2021-06-17T16:29:39.973Z"}],"start":"2021-06-17T16:29:39.225Z"},{"executionStatus":"Done","shardIndex":1,"end":"2021-06-17T16:29:58.902Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:29:57.909Z","description":"UpdatingJobStore","endTime":"2021-06-17T16:29:58.902Z"},{"startTime":"2021-06-17T16:29:54.945Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:29:54.945Z"},{"startTime":"2021-06-17T16:29:55.125Z","description":"UpdatingCallCache","endTime":"2021-06-17T16:29:57.909Z"},{"startTime":"2021-06-17T16:29:54.525Z","description":"RequestingExecutionToken","endTime":"2021-06-17T16:29:54.945Z"},{"startTime":"2021-06-17T16:29:54.966Z","description":"CallCacheReading","endTime":"2021-06-17T16:29:55.125Z"},{"startTime":"2021-06-17T16:29:54.525Z","description":"Pending","endTime":"2021-06-17T16:29:54.525Z"},{"startTime":"2021-06-17T16:29:54.945Z","description":"PreparingJob","endTime":"2021-06-17T16:29:54.966Z"}],"start":"2021-06-17T16:29:54.525Z"},{"executionStatus":"Done","shardIndex":2,"end":"2021-06-17T16:29:49.914Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:29:45.345Z","description":"RequestingExecutionToken","endTime":"2021-06-17T16:29:45.944Z"},{"startTime":"2021-06-17T16:29:45.966Z","description":"CallCacheReading","endTime":"2021-06-17T16:29:46.133Z"},{"startTime":"2021-06-17T16:29:45.944Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:29:45.944Z"},{"startTime":"2021-06-17T16:29:48.906Z","description":"UpdatingJobStore","endTime":"2021-06-17T16:29:49.914Z"},{"startTime":"2021-06-17T16:29:45.345Z","description":"Pending","endTime":"2021-06-17T16:29:45.345Z"},{"startTime":"2021-06-17T16:29:45.944Z","description":"PreparingJob","endTime":"2021-06-17T16:29:45.966Z"},{"startTime":"2021-06-17T16:29:46.133Z","description":"UpdatingCallCache","endTime":"2021-06-17T16:29:48.906Z"}],"start":"2021-06-17T16:29:45.345Z"}],"disease.FlagStat":[{"executionStatus":"Done","shardIndex":0,"end":"2021-06-17T16:29:37.926Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:29:15.765Z","description":"Pending","endTime":"2021-06-17T16:29:15.765Z"},{"startTime":"2021-06-17T16:29:36.920Z","description":"UpdatingJobStore","endTime":"2021-06-17T16:29:37.926Z"},{"startTime":"2021-06-17T16:29:15.945Z","description":"PreparingJob","endTime":"2021-06-17T16:29:15.965Z"},{"startTime":"2021-06-17T16:29:15.965Z","description":"CallCacheReading","endTime":"2021-06-17T16:29:35.558Z"},{"startTime":"2021-06-17T16:29:15.765Z","description":"RequestingExecutionToken","endTime":"2021-06-17T16:29:15.945Z"},{"startTime":"2021-06-17T16:29:15.945Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:29:15.945Z"},{"startTime":"2021-06-17T16:29:35.558Z","description":"UpdatingCallCache","endTime":"2021-06-17T16:29:36.920Z"}],"start":"2021-06-17T16:29:15.765Z"},{"executionStatus":"Done","shardIndex":1,"end":"2021-06-17T16:29:52.904Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:29:30.945Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:29:30.945Z"},{"startTime":"2021-06-17T16:29:30.045Z","description":"RequestingExecutionToken","endTime":"2021-06-17T16:29:30.945Z"},{"startTime":"2021-06-17T16:29:30.045Z","description":"Pending","endTime":"2021-06-17T16:29:30.045Z"},{"startTime":"2021-06-17T16:29:48.876Z","description":"UpdatingCallCache","endTime":"2021-06-17T16:29:51.909Z"},{"startTime":"2021-06-17T16:29:30.945Z","description":"PreparingJob","endTime":"2021-06-17T16:29:30.967Z"},{"startTime":"2021-06-17T16:29:30.967Z","description":"CallCacheReading","endTime":"2021-06-17T16:29:48.876Z"},{"startTime":"2021-06-17T16:29:51.909Z","description":"UpdatingJobStore","endTime":"2021-06-17T16:29:52.904Z"}],"start":"2021-06-17T16:29:30.044Z"},{"executionStatus":"Done","shardIndex":2,"end":"2021-06-17T16:29:43.907Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:29:18.825Z","description":"Pending","endTime":"2021-06-17T16:29:18.825Z"},{"startTime":"2021-06-17T16:29:18.964Z","description":"CallCacheReading","endTime":"2021-06-17T16:29:41.918Z"},{"startTime":"2021-06-17T16:29:42.914Z","description":"UpdatingJobStore","endTime":"2021-06-17T16:29:43.907Z"},{"startTime":"2021-06-17T16:29:41.918Z","description":"UpdatingCallCache","endTime":"2021-06-17T16:29:42.914Z"},{"startTime":"2021-06-17T16:29:18.944Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:29:18.944Z"},{"startTime":"2021-06-17T16:29:18.825Z","description":"RequestingExecutionToken","endTime":"2021-06-17T16:29:18.944Z"},{"startTime":"2021-06-17T16:29:18.944Z","description":"PreparingJob","endTime":"2021-06-17T16:29:18.964Z"}],"start":"2021-06-17T16:29:18.825Z"}],"ScatterAt50_19":[{"executionStatus":"Done","shardIndex":0,"end":"2021-06-17T16:28:48.226Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:28:17.631Z","description":"SubWorkflowRunningState","endTime":"2021-06-17T16:28:48.226Z"},{"startTime":"2021-06-17T16:28:17.628Z","description":"SubWorkflowPreparingState","endTime":"2021-06-17T16:28:17.631Z"},{"startTime":"2021-06-17T16:28:17.624Z","description":"SubWorkflowPendingState","endTime":"2021-06-17T16:28:17.625Z"},{"startTime":"2021-06-17T16:28:17.625Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:28:17.628Z"}],"start":"2021-06-17T16:28:17.624Z"},{"executionStatus":"Done","shardIndex":1,"end":"2021-06-17T16:29:00.466Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:28:17.631Z","description":"SubWorkflowRunningState","endTime":"2021-06-17T16:29:00.466Z"},{"startTime":"2021-06-17T16:28:17.625Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:28:17.628Z"},{"startTime":"2021-06-17T16:28:17.628Z","description":"SubWorkflowPreparingState","endTime":"2021-06-17T16:28:17.631Z"},{"startTime":"2021-06-17T16:28:17.625Z","description":"SubWorkflowPendingState","endTime":"2021-06-17T16:28:17.625Z"}],"start":"2021-06-17T16:28:17.625Z"},{"executionStatus":"Done","shardIndex":2,"end":"2021-06-17T16:28:51.285Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:28:17.625Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:28:17.628Z"},{"startTime":"2021-06-17T16:28:17.625Z","description":"SubWorkflowPendingState","endTime":"2021-06-17T16:28:17.625Z"},{"startTime":"2021-06-17T16:28:17.631Z","description":"SubWorkflowRunningState","endTime":"2021-06-17T16:28:51.285Z"},{"startTime":"2021-06-17T16:28:17.628Z","description":"SubWorkflowPreparingState","endTime":"2021-06-17T16:28:17.631Z"}],"start":"2021-06-17T16:28:17.625Z"}],"disease.SambambaMarkdup":[{"executionStatus":"Done","shardIndex":0,"end":"2021-06-17T16:29:13.918Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:29:06.965Z","description":"CallCacheReading","endTime":"2021-06-17T16:29:09.910Z"},{"startTime":"2021-06-17T16:29:06.945Z","description":"PreparingJob","endTime":"2021-06-17T16:29:06.965Z"},{"startTime":"2021-06-17T16:29:12.915Z","description":"UpdatingJobStore","endTime":"2021-06-17T16:29:13.918Z"},{"startTime":"2021-06-17T16:29:09.910Z","description":"UpdatingCallCache","endTime":"2021-06-17T16:29:12.915Z"},{"startTime":"2021-06-17T16:29:06.585Z","description":"RequestingExecutionToken","endTime":"2021-06-17T16:29:06.945Z"},{"startTime":"2021-06-17T16:29:06.585Z","description":"Pending","endTime":"2021-06-17T16:29:06.585Z"},{"startTime":"2021-06-17T16:29:06.945Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:29:06.945Z"}],"start":"2021-06-17T16:29:06.585Z"},{"executionStatus":"Done","shardIndex":1,"end":"2021-06-17T16:29:28.913Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:29:27.916Z","description":"UpdatingJobStore","endTime":"2021-06-17T16:29:28.913Z"},{"startTime":"2021-06-17T16:29:21.886Z","description":"RequestingExecutionToken","endTime":"2021-06-17T16:29:21.944Z"},{"startTime":"2021-06-17T16:29:21.945Z","description":"PreparingJob","endTime":"2021-06-17T16:29:21.967Z"},{"startTime":"2021-06-17T16:29:21.886Z","description":"Pending","endTime":"2021-06-17T16:29:21.886Z"},{"startTime":"2021-06-17T16:29:21.967Z","description":"CallCacheReading","endTime":"2021-06-17T16:29:26.149Z"},{"startTime":"2021-06-17T16:29:21.944Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:29:21.945Z"},{"startTime":"2021-06-17T16:29:26.149Z","description":"UpdatingCallCache","endTime":"2021-06-17T16:29:27.916Z"}],"start":"2021-06-17T16:29:21.886Z"},{"executionStatus":"Done","shardIndex":2,"end":"2021-06-17T16:29:16.908Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:29:09.964Z","description":"CallCacheReading","endTime":"2021-06-17T16:29:13.209Z"},{"startTime":"2021-06-17T16:29:09.645Z","description":"Pending","endTime":"2021-06-17T16:29:09.645Z"},{"startTime":"2021-06-17T16:29:09.944Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:29:09.944Z"},{"startTime":"2021-06-17T16:29:09.944Z","description":"PreparingJob","endTime":"2021-06-17T16:29:09.964Z"},{"startTime":"2021-06-17T16:29:09.645Z","description":"RequestingExecutionToken","endTime":"2021-06-17T16:29:09.944Z"},{"startTime":"2021-06-17T16:29:15.918Z","description":"UpdatingJobStore","endTime":"2021-06-17T16:29:16.907Z"},{"startTime":"2021-06-17T16:29:13.209Z","description":"UpdatingCallCache","endTime":"2021-06-17T16:29:15.918Z"}],"start":"2021-06-17T16:29:09.645Z"}],"disease.SambambaMerge":[{"executionStatus":"Done","shardIndex":0,"end":"2021-06-17T16:29:04.917Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:28:50.265Z","description":"RequestingExecutionToken","endTime":"2021-06-17T16:28:50.945Z"},{"startTime":"2021-06-17T16:28:50.945Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:28:50.945Z"},{"startTime":"2021-06-17T16:29:03.910Z","description":"UpdatingJobStore","endTime":"2021-06-17T16:29:04.916Z"},{"startTime":"2021-06-17T16:28:50.945Z","description":"PreparingJob","endTime":"2021-06-17T16:28:50.972Z"},{"startTime":"2021-06-17T16:28:50.265Z","description":"Pending","endTime":"2021-06-17T16:28:50.265Z"},{"startTime":"2021-06-17T16:28:50.972Z","description":"CallCacheReading","endTime":"2021-06-17T16:29:03.861Z"},{"startTime":"2021-06-17T16:29:03.861Z","description":"UpdatingCallCache","endTime":"2021-06-17T16:29:03.910Z"}],"start":"2021-06-17T16:28:50.265Z"},{"executionStatus":"Done","shardIndex":1,"end":"2021-06-17T16:29:19.906Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:29:02.945Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:29:02.945Z"},{"startTime":"2021-06-17T16:29:02.971Z","description":"CallCacheReading","endTime":"2021-06-17T16:29:17.458Z"},{"startTime":"2021-06-17T16:29:02.505Z","description":"RequestingExecutionToken","endTime":"2021-06-17T16:29:02.945Z"},{"startTime":"2021-06-17T16:29:18.912Z","description":"UpdatingJobStore","endTime":"2021-06-17T16:29:19.906Z"},{"startTime":"2021-06-17T16:29:02.945Z","description":"PreparingJob","endTime":"2021-06-17T16:29:02.971Z"},{"startTime":"2021-06-17T16:29:17.458Z","description":"UpdatingCallCache","endTime":"2021-06-17T16:29:18.912Z"},{"startTime":"2021-06-17T16:29:02.505Z","description":"Pending","endTime":"2021-06-17T16:29:02.505Z"}],"start":"2021-06-17T16:29:02.505Z"},{"executionStatus":"Done","shardIndex":2,"end":"2021-06-17T16:29:07.903Z","attempt":1,"executionEvents":[{"startTime":"2021-06-17T16:28:53.945Z","description":"WaitingForValueStore","endTime":"2021-06-17T16:28:53.945Z"},{"startTime":"2021-06-17T16:29:06.913Z","description":"UpdatingJobStore","endTime":"2021-06-17T16:29:07.903Z"},{"startTime":"2021-06-17T16:28:53.971Z","description":"CallCacheReading","endTime":"2021-06-17T16:29:05.829Z"},{"startTime":"2021-06-17T16:28:53.945Z","description":"PreparingJob","endTime":"2021-06-17T16:28:53.971Z"},{"startTime":"2021-06-17T16:28:53.325Z","description":"RequestingExecutionToken","endTime":"2021-06-17T16:28:53.945Z"},{"startTime":"2021-06-17T16:29:05.829Z","description":"UpdatingCallCache","endTime":"2021-06-17T16:29:06.913Z"},{"startTime":"2021-06-17T16:28:53.325Z","description":"Pending","endTime":"2021-06-17T16:28:53.325Z"}],"start":"2021-06-17T16:28:53.325Z"}]},"id":"2ce27dd6-34ac-44c1-ae4e-36478897a49b"};
+        var parentWorkflowNames = [];
+        var expandedParentWorkflows = [];
+        var chartView;
+        
+        google.charts.load('current', {packages: ['timeline']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function addDataTableRow(dataTable, callName, callPartName, startDate, endDate, ancestry) {
+            if (startDate <= endDate) {
+                newRow = dataTable.addRow([callName, callPartName, startDate, endDate]);
+                dataTable.setRowProperty(newRow, "ancestry", ancestry);
+            } else {
+                console.error("Unable to add '" + callName + "'s entry: '" + callPartName + "' because start-time '" + startDate + "'' is greater than end-time '" + endDate + "'");
+            }
+        }
+
+        function parseMetadata(data, dataTable, ancestry) {
+            var workflowName = data.workflowName;
+            var workflowEnd = null;
+            if (data.hasOwnProperty("end")) {
+                workflowEnd = new Date(data.end);
+            }
+            var executionCallsCount = 0;
+            var callsList = data.calls;
+            var sortable = [];
+            for (var key in callsList) {
+                sortable.push([key, callsList[key]]);
+            }
+            sortable.sort(function(a,b) {
+                return new Date(a[1][0].start) - new Date(b[1][0].start);
+            });
+
+            for(var sortableIndex in sortable)
+            {
+                var callName = sortable[sortableIndex][0];
+                var callList = sortable[sortableIndex][1];
+
+                for (var callIndex in callList)
+                {
+                    var index = callList[callIndex]["shardIndex"];
+                    var attempt = callList[callIndex]["attempt"];
+                    var callStatus = callList[callIndex].executionStatus;
+
+                    // add the index of the shard if there is one
+                    var callLqn = (index == -1 ? callName : callName + "." + index);
+
+                    // add the retry number, unless this was a successful first attempt (for brevity)
+                    callLqn = ( callStatus == "Done" && attempt == 1 ? callLqn : callLqn + ".retry-" + attempt);
+
+                    // Remove the workflow name
+                    callLqn = callLqn.replace(new RegExp("^" + workflowName + "\\."), "");
+
+                    var callFqn;
+                    if (ancestry.length == 0) {
+                        callFqn = callLqn;
+                    } else {
+                        callFqn = ancestry.join("/") + "/" + callLqn;
+                    }
+                    
+                    var executionEvents = callList[callIndex].executionEvents;
+
+                    var firstEventStart = null;
+                    var finalEventEnd = null;
+
+                    if(callStatus == "Done" || callStatus == "Failed" || callStatus == "RetryableFailure") {
+                        executionCallsCount++;
+                        for (var executionEventIndex in executionEvents) {
+                            var executionEvent = callList[callIndex].executionEvents[executionEventIndex];
+                            var description = executionEvent["description"];
+                            // Replace all "start(...)" with just "start" so that the names (and therefore the "color" assigned from the list below) are consistent:
+                            description = description.replace(new RegExp("^start.*"), "start");
+                            var startDate = new Date(executionEvent["startTime"]);
+                            var endDate = new Date(executionEvent["endTime"]);
+                            if (firstEventStart == null || startDate < firstEventStart) {
+                                firstEventStart = startDate
+                            }
+                            if (finalEventEnd == null || endDate > finalEventEnd) {
+                                finalEventEnd = endDate
+                            }
+                            // NB: See the column definitions above.
+                            addDataTableRow(dataTable, callFqn, description, startDate, endDate, ancestry);
+                        }
+
+                        if (callList[callIndex].hasOwnProperty("start")) {
+                            var callStart = new Date(callList[callIndex].start);
+                        }
+                        else {
+                            var callStart = firstEventStart
+                        }
+                        if (callList[callIndex].hasOwnProperty("end")) {
+                            var callEnd = new Date(callList[callIndex].end);
+                        }
+                        else {
+                            var callStart = finalEventEnd
+                        }
+
+                        if (firstEventStart == null || finalEventEnd == null) {
+                            addDataTableRow(dataTable, callFqn, callList[callIndex].executionStatus, callStart, callEnd, ancestry);
+                        } else {
+                            if (callStart < firstEventStart) addDataTableRow(dataTable, callFqn, "cromwell starting overhead", callStart, firstEventStart, ancestry);
+                            if (callEnd > finalEventEnd) addDataTableRow(dataTable, callFqn, "cromwell final overhead", finalEventEnd, callEnd, ancestry);
+                        }
+                    } else if (callList[callIndex].executionStatus == "Running" || callList[callIndex].executionStatus == "QueuedInCromwell" || callList[callIndex].executionStatus == "Starting") {
+                        var status = callList[callIndex].executionStatus
+                        executionCallsCount++;
+                        var endDate = workflowEnd;
+                        if(endDate == null) {
+                            addDataTableRow(dataTable, callFqn, status, new Date(callList[callIndex].start), new Date(Date.now()), ancestry);
+                        }
+                        else {
+                            addDataTableRow(dataTable, callFqn, "Still ".concat(status).concat(" when workflow ended"), new Date(callList[callIndex].start), endDate, ancestry);
+                        }
+                    }
+
+                    if (callList[callIndex].hasOwnProperty("subWorkflowMetadata")) {
+                        var clone = ancestry.slice(0);
+                        clone.push(callLqn);
+                        parentWorkflowNames.push(callFqn);
+                        executionCallsCount += parseMetadata(callList[callIndex].subWorkflowMetadata, dataTable, clone);
+                    }
+                }
+            }
+            
+            return executionCallsCount;
+        }
+
+        function drawChart() {
+            var dataTable = new google.visualization.DataTable();
+            dataTable.addColumn({ type: 'string', id: 'Position' });
+            dataTable.addColumn({ type: 'string', id: 'Name' });
+            dataTable.addColumn({ type: 'date', id: 'Start' });
+            dataTable.addColumn({ type: 'date', id: 'End' });
+
+            var executionCallsCount =  parseMetadata(metadataJson, dataTable, []);
+
+            var options = {
+                colors: ['#33178f', '#c5bc12', '#5e8229', '#9a03f8', '#9e4653', '#4ef2ca', '#2dd801', '#3f7b49', '#763097', '#bc8b28', '#cb716f', '#adce53', '#c3768d', '#fdf92a'],
+                height: executionCallsCount * 18 + 60,
+                timeline: {
+                    avoidOverlappingGridLines: false,
+                    showBarLabels: false,
+                    rowLabelStyle: { fontName: 'Helvetica', fontSize: 10, color: '#603913' },
+                    // Although bar labels are unshown, they still affect the height of each row. So make it small.
+                    barLabelStyle: { fontName: 'Helvetica', fontSize: 5, color: '#603913' },
+                },
+                tooltip: {isHtml: true}
+            };
+
+            var container = document.getElementById('chart_div');
+            var chart = new google.visualization.Timeline(container);
+            chartView = hideAllSubWorkflows(dataTable);
+
+            chart.draw(chartView, options);
+
+            google.visualization.events.addListener(chart, 'select', selectHandler);
+
+            function selectHandler(e) {
+                var selectedItem = chart.getSelection()[0];
+                if (selectedItem) {
+                    chartView = toggleSubWorkflowRows(dataTable, selectedItem.row);
+                    chart.draw(chartView, options);
+                    // For some reason the tooltip gets stuck and doesn't disappear by itself, so remove it explicitly from the DOM
+                    $( ".google-visualization-tooltip" ).remove();
+                }
+            }
+        }
+
+        function toggleSubWorkflowRows(dt, selectedRow) {
+            function filterFunction(cell, row, column, table) {
+                var ancestries = table.getRowProperty(row, "ancestry");
+                var ancestryFqn = ancestries.join("/");
+                // Display the row if it's not a sub workflow or if its parent is in the list of workflows to expand.
+                return (ancestries.length == 0 || (expandedParentWorkflows.indexOf(ancestryFqn) != -1));
+            }
+    
+            var filter = {
+                test: filterFunction,
+                // Not used because all filtering is done in filterFunction but it's mandatory to have something else than the filter
+                column: 0
+            };
+            
+            var parentWorkflow;
+            parentWorkflow = chartView.getValue(selectedRow, 0);
+
+            var indexOfParentWorkflow = expandedParentWorkflows.indexOf(parentWorkflow);
+
+            if (indexOfParentWorkflow != -1) {
+                // Remove the parent workflow and its children from the list
+                expandedParentWorkflows = expandedParentWorkflows.filter(function (el, i, array) {
+                    return !el.startsWith(parentWorkflow)
+                })
+            } else if (parentWorkflow && parentWorkflowNames.indexOf(parentWorkflow) != -1) {
+                // Add it if it's not
+                expandedParentWorkflows.push(parentWorkflow);
+            }
+            
+            var rowsToDisplay = dt.getFilteredRows([filter]);
+            var view = new google.visualization.DataView(dt);
+            view.setRows(rowsToDisplay);
+            return view;
+        }
+        
+        function hideAllSubWorkflows(dt) {
+            var view = new google.visualization.DataView(dt);
+            function filterFunction(cell, row, column, table) {
+                return table.getRowProperty(row, "ancestry").length != 0;
+            }
+
+            view.hideRows(dt.getFilteredRows([{column: 0, test: filterFunction}]));
+            return view;
+        }
+        
+        
+    </script>
+    <title id="title"></title>
+</head>
+<body>
+<div id="chart_div"></div>
+</body>
+</html>
