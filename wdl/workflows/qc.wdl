@@ -6,6 +6,8 @@ import "../tasks/qc/fastp.wdl"
 
 workflow quality_control {
     input {
+        String? stagecode
+
         String software = 'fastp'
         File raw_fq_1
         File raw_fq_2
@@ -25,6 +27,7 @@ workflow quality_control {
 
         call fastp.fastp as qc_fastp {
             input:
+                stagecode = stagecode,
                 raw_fq_1 = raw_fq_1,
                 raw_fq_2 = raw_fq_2,
                 clean_fq_1 = clean_fq_1,
@@ -35,6 +38,7 @@ workflow quality_control {
 
         call fastp.fastp_convert as fastp_convert {
             input:
+                stagecode = stagecode,
                 fastp_convert_py = fastp_convert_py,
                 json = qc_fastp.out_json,
                 identity = identity,

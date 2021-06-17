@@ -1,13 +1,20 @@
 version 1.0
 
-task ParseSampleInfo {
+task excel2info {
     input {
-        File sample_info
-        String outfile
+        File infile
+
+        String fenqi
+        String outfile = 'sample_info_~{fenqi}'
+
+        # File excel2info_py = '../../scripts/common/excel2info.py'
+        String excel2info = 'excel2info'
     }
 
     command <<<
-        ~{excel2info} -info ~{sample_info} -o {outfile}
+        set -eo pipefail
+
+        ~{excel2info} --info ~{infile} --outfile ~{outfile} --fenqi ~{fenqi}
     >>>
 
     output {
@@ -15,10 +22,8 @@ task ParseSampleInfo {
     }
 
     meta {
-
     }
 
     parameter_meta {
-
     }
 }

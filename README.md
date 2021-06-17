@@ -1,1 +1,2 @@
-# Pipeline for Novogene Disease Department
+# Novogene Pipeline - Disease Germline WDL
+
