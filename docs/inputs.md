@@ -1,6 +1,3 @@
-# disease pipeline
-the main workflow pipeline for disease department
-
 ## Inputs
 
 ### Required inputs
@@ -29,8 +26,6 @@ the main workflow pipeline for disease department
         <i>File &mdash; Default: None</i><br />
         the sample list file
 </p>
-
-
 
 ### Other inputs
 <details>

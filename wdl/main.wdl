@@ -29,7 +29,7 @@ workflow disease {
 
         String seqstrag = 'WES'
 
-        String region_bed = '/ifs/TJPROJ3/DISEASE/Database/Exome_bed/Agilent/SureSelectXT.Human.All.Exon.V6/S07604514_Regions_extract.bed'
+        String region_bed
     }
 
 
