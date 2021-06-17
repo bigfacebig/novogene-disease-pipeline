@@ -50,7 +50,8 @@ java -jar womtool-<version>.jar inputs path/to/main.wdl > inputs.json
 ```
 java -Dconfig.file=sge.conf -jar cromwell-<version>.jar server
 ```
-> config example: [sge.conf](../config/cromwell/sge.conf)
+
+- config example: [sge.conf](assets/sge.conf)
 
 #### submit to server
 ```
