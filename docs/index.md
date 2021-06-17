@@ -36,6 +36,15 @@ java -jar womtool-<version>.jar inputs path/to/main.wdl > inputs.json
 }
 ```
 
+- `labels.json` example:
+
+```json
+{
+  "stagecode": "X101XXXX",
+  "owner": "suqingdong"
+}
+```
+
 ### 2. submit with cromwell
 #### start a server with cromwell
 ```
@@ -49,6 +58,7 @@ java -jar cromwell-<version>.jar submit \
     -h http://<HOST>:<PORT> \
     -i inputs.json \
     -o options.json \
+    -l labels.json \
     --imports /path/to/main.zip \
     path/to/mail.wdl
 ```
