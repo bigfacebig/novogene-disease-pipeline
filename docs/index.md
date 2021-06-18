@@ -22,7 +22,7 @@ java -jar cromwell-<version>.jar run \
 ```bash
 java -jar womtool-<version>.jar inputs path/to/main.wdl > inputs.json
 ```
-> [inputs details](./inputs.html)
+- [inputs details](./inputs.html)
 
 - `options.json` example:
 
