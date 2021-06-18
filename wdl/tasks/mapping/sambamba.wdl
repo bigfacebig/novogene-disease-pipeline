@@ -28,6 +28,21 @@ task merge {
         File merged_bam = out_bam
         File merged_bam_bai = '~{out_bam}.bai'
     }
+
+    parameter_meta {
+        input_bams: {
+            description: "the files array of input bams"
+        }
+        out_bam: {
+            description: "the output bam"
+        }
+        nthreads: {
+            description: "the number of threads to use"
+        }
+        single: {
+            description: "input bams is sigle or not"
+        }
+    }
 }
 
 task markdup {
@@ -54,5 +69,20 @@ task markdup {
     output {
         File nodup_bam = out_bam
         File nodup_bam_bai = '~{out_bam}.bai'
+    }
+
+    parameter_meta {
+        input_bam: {
+            description: "the input bam"
+        }
+        out_bam: {
+            description: "the output bam"
+        }
+        nthreads: {
+            description: "the number of threads to use"
+        }
+        tmpdir: {
+            description: "the temp directory"
+        }
     }
 }

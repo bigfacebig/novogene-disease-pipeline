@@ -16,8 +16,6 @@ workflow disease {
 
         String? stagecode
 
-        String? proj_path
-
         String fenqi_number
 
         File sample_info_excel
@@ -176,7 +174,7 @@ workflow disease {
     }
 
     meta {
-        description: 'the main workflow pipeline for Disease department'
+        description: 'the main workflow pipeline for disease department'
         author: "suqingdong <suqingdong@novogene.com>"
     }
 }

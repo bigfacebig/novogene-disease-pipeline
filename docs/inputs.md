@@ -1,4 +1,8 @@
+# disease
+the main workflow pipeline for disease department
+
 ## Inputs
+
 
 ### Required inputs
 <p name="disease.fenqi_number">
@@ -10,6 +14,11 @@
         <b>disease.ref_fasta</b><br />
         <i>String &mdash; Default: None</i><br />
         the fasta file of reference genome
+</p>
+<p name="disease.region_bed">
+        <b>disease.region_bed</b><br />
+        <i>String &mdash; Default: None</i><br />
+        the target region bed file
 </p>
 <p name="disease.ROOT_DIR">
         <b>disease.ROOT_DIR</b><br />
@@ -27,23 +36,30 @@
         the sample list file
 </p>
 
+
+
 ### Other inputs
 <details>
 <summary> Show/Hide </summary>
 <p name="disease.BwaMem.bwa">
         <b>disease.BwaMem.bwa</b><br />
-        <i>String &mdash; Default: 'bwa'</i><br />
-        ???
+        <i>String &mdash; Default: "bwa"</i><br />
+        the bwa executable file or command
+</p>
+<p name="disease.BwaMem.platform">
+        <b>disease.BwaMem.platform</b><br />
+        <i>String &mdash; Default: "illumina"</i><br />
+        the platform of sequencing
 </p>
 <p name="disease.BwaMem.sambamba">
         <b>disease.BwaMem.sambamba</b><br />
-        <i>String &mdash; Default: 'sambamba'</i><br />
-        ???
+        <i>String &mdash; Default: "sambamba"</i><br />
+        the sambamba executable file or command
 </p>
 <p name="disease.BwaMem.threads">
         <b>disease.BwaMem.threads</b><br />
         <i>Int &mdash; Default: 4</i><br />
-        ???
+        use specified number of threads
 </p>
 <p name="disease.excel2info.excel2info">
         <b>disease.excel2info.excel2info</b><br />
@@ -58,11 +74,6 @@
 <p name="disease.parse_sample_list.comment">
         <b>disease.parse_sample_list.comment</b><br />
         <i>String &mdash; Default: '#B'</i><br />
-        ???
-</p>
-<p name="disease.proj_path">
-        <b>disease.proj_path</b><br />
-        <i>String? &mdash; Default: None</i><br />
         ???
 </p>
 <p name="disease.QC.length_required">
@@ -105,25 +116,20 @@
         <i>String &mdash; Default: 'b37'</i><br />
         the version of reference genome
 </p>
-<p name="disease.region_bed">
-        <b>disease.region_bed</b><br />
-        <i>String &mdash; Default: '/ifs/TJPROJ3/DISEASE/Database/Exome_bed/Agilent/SureSelectXT.Human.All.Exon.V6/S07604514_Regions_extract.bed'</i><br />
-        the target region bed file
-</p>
 <p name="disease.SambambaMarkdup.nthreads">
         <b>disease.SambambaMarkdup.nthreads</b><br />
         <i>Int &mdash; Default: 4</i><br />
-        ???
+        the number of threads to use
 </p>
 <p name="disease.SambambaMarkdup.tmpdir">
         <b>disease.SambambaMarkdup.tmpdir</b><br />
         <i>String &mdash; Default: 'tmp'</i><br />
-        ???
+        the temp directory
 </p>
 <p name="disease.SambambaMerge.nthreads">
         <b>disease.SambambaMerge.nthreads</b><br />
         <i>Int &mdash; Default: 4</i><br />
-        ???
+        the number of threads to use
 </p>
 <p name="disease.seqstrag">
         <b>disease.seqstrag</b><br />

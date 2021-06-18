@@ -36,7 +36,33 @@ task depth_stat {
         ]
         File information ='~{out_dir}/information.xlsx'
     }
+
+    parameter_meta {
+        bam: {
+            description: "the input bam"
+        }
+        out_dir: {
+            description: "the output directory"
+        }
+        ref_version: {
+            description: "the version of reference genome"
+        }
+        sampleid: {
+            description: "the identity of sample"
+        }
+        seqstrag:{
+            description: "the strategy of sequencing"
+        }
+
+        depth_stat_perl: {
+            description: "the path of depth_stat.pl script"
+        }
+        region_bed: {
+            description: "the region bed file, not needed for WGS"
+        }
+    }
 }
+
 
 task flag_stat {
     input {
@@ -59,7 +85,20 @@ task flag_stat {
     output {
         File flag_stat = outfile
     }
+
+    parameter_meta {
+        bam: {
+            description: "the input bam"
+        }
+        outfile: {
+            description: "the output filename"
+        }
+        sam_flagstat_py: {
+            description: "the path of sam_flagstat.py script"
+        }
+    }
 }
+
 
 task combine_stat {
     input {
@@ -86,6 +125,27 @@ task combine_stat {
 
     output {
         File stat = outfile
+    }
+
+    parameter_meta {
+        depth_stat: {
+            description: "the result of depth_stat"
+        }
+        flag_stat: {
+            description: "the result of flag_stat"
+        }
+        sampleid: {
+            description: "the identity of sample"
+        }
+        outfile: {
+            description: "the output filename"
+        }
+        seqstrag:{
+            description: "the strategy of sequencing"
+        }
+        combine_stat_py: {
+            description: "the path of combine_stat.py script"
+        }
     }
 }
 
