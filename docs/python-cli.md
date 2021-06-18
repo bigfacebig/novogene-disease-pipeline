@@ -75,3 +75,39 @@ Options:
   -h, -?, --help      Show this message and exit.
 ```
 [timing-demo.html](./assets/timing-demo.html)
+
+
+#### `logs`
+```bash
+python3 cli/main.py logs -h
+```
+
+```
+Usage: main.py logs [OPTIONS]
+
+  Get the logs for a workflow
+
+Options:
+  -id, --uuid TEXT  A Cromwell workflow UUID, which is the workflow identifier
+                    [required]
+
+  -?, -h, --help    Show this message and exit.
+```
+
+
+#### `abort`
+```bash
+python3 cli/main.py abort -h
+```
+
+```
+Usage: main.py abort [OPTIONS]
+
+  Request Cromwell to abort a running workflow by UUID
+
+Options:
+  -id, --uuid TEXT  A Cromwell workflow UUID, which is the workflow identifier
+                    [required]
+
+  -?, -h, --help    Show this message and exit.
+```
